@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>注册</title>
+	<style type="text/css">
+	.bg { 
+  		/* The image used */
+  		background-image: url("photo/三头六臂.jpg");
+
+  		/* Full height */
+  		height: 100%; 
+
+  		/* Center and scale the image nicely */
+  		/*background-position: center;*/
+  		background-repeat: no-repeat;
+  		background-size: cover;
+	}
+
+	.modal-content {
+  		background-color: rgba(255, 255, 255, 0.3);
+  		margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  		border: 1px solid #888;
+  		width: 30%; /* Could be more or less, depending on screen size */
+  		text-align: center;
+	}
+
+	.container {
+  		padding: 16px;
+	}
+
+	input[type=text], input[type=password], input[type=email] {
+  		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		box-sizing: border-box;
+	}
+
+	.registerbtn {
+  background-color: #85929E;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.7;
+  font-size: 140%
+}
+
+.registerbtn:hover {
+	background-color: #A93226;
+  	opacity: 1;
+}
+
+
+	</style>
+</head>
+<body class="bg">
+	<form class="modal-content">
+		<div class="container">
+			<label for="uname" style="font-size: 130%; text-align: center;"><b>用户名</b></label>
+      		<input type="text" placeholder="给你的哪吒取一个名字" name="uname" required>
+
+      		<label for="psw" style="font-size: 130%"><b>密码</b></label>
+      		<input type="password" placeholder="打开ta内心的钥匙" name="psw" required>
+
+      		<label for="psw" style="font-size: 130%"><b>邮箱</b></label>
+      		<input type="email" placeholder="给哪吒写封信" name="psw" required>
+
+      		<hr>
+    		<p>注册即同意我们的 <a href="#">条款</a></p>
+    		<button type="submit" class="registerbtn">注册</button>
+    		<br>
+    		<p><b>已有哪吒？<a href="firstpage.html">进入</a></b></p>
+		</div>
+	</form>
+</body>
+</html>
