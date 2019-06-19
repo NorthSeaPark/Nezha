@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #DEB887;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.sidenav {
+  overflow: hidden;
+  padding: 0px;
+  margin-top: 20px;
+  background-color: #DEB887;
+}
+
+.sidenav a{
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  padding: 30px 33px;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card a{
+  color: black;
+}
+
+.card a:hover{
+  background-color: blue;
+  color: white;
+}
+
+.card1{
+  background-color: #333;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card1 h2{
+  color: white;
+  text-align: center;
+}
+
+.card1 a{
+  color: white;
+  text-decoration: none;
+  padding: 12px 50px 12px 50px;
+}
+
+.card1 a:hover{
+  color: black;
+  background-color: #DEB887;
+}
+
+.card2 {
+    background-color: #DEB887;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card2 h3{
+  text-align: center;
+}
+
+.card2 div{
+  text-align: center; color: blue;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #DEB887;
+    margin-top: 20px;
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>哪吒</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">活动</a>
+  <a href="#">展览</a>
+  <a href="#">人物</a>
+  <a href="#" style="float:right">登录</a>
+  <a href="#" style="float:right">注册</a> 
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><a href="">不安分子</a></h2>
+      <h5><a href="">査里里</a>&nbsp;&nbsp;&nbsp;&nbsp;7/1/2018</h5>
+      </br>
+      <div><img style="height: 300px; width: 400px; transform:rotate(180deg);" src="img/charlie.jpg"></div>
+      <p style="font-size: 10px; margin-left: 150px;">(在査里里家中的对话)</p>
+      <p>像你们一样，我也深爱着哪吒。在听了上千次《闹海》之后，我决定去寻找哪吒，那些还未夭折的哪吒。这个暑假，我走遍了北京的各个角落，寻找那些对自己所热爱的事业
+         无比执着，在千篇一律的世界中依然保持自我的年轻人...&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#A0522D; background-color: transparent;" href="">>>>我的故事</a></p>
+    </div>
+    <div class="card">
+      <h2><a href="">市井野史</a></h2>
+      <h5><a href="">平平李</a>&nbsp;&nbsp;&nbsp;&nbsp;7/2/2018</h5>
+      <div><img style="height: 300px; width: 400px;" src="img/ping.jpg"></div>
+      <p style="font-size: 10px; margin-left: 150px;">(正在工作中的平平李)</p>
+      <p>去年冬天，我迷上了少女偶像。从那些破旧的，无人问津的胡同里走出来，看着远处夜色中，被烟雾环绕，直入云霄的中国尊，我感到了
+      一种走出时间门外的慌张。我又要去面对人群。在这个注重文化底蕴与现代文明一体化的大都市里，个体意识是注定要被排斥的。我们喜欢
+      外表光鲜的，晶莹剔透的，可爱生动的，就像台上那些小偶像一样。可是仔细想想，那些小偶像也是这宏大历史中的个体，是注定要滑向边缘的。
+      在每一天就要结束的时刻，我们都要迎来人类的究极问题：是去三里屯喝一杯，暂时的忘记自我，还是直面硬刚杀不死的时间？&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#A0522D; background-color: transparent;" href="">>>>我的故事</a></p>
+    </div>
+    <div class="card">
+      <h2><a href="">悲情人物</a></h2>
+      <h5><a href="">悬崖</a>&nbsp;&nbsp;&nbsp;&nbsp;7/4/2018</h5>
+      <div><img style="height: 300px; width: 400px;" src="img/wei.jpg"></div>
+      <p style="font-size: 10px; margin-left: 150px;">(站在床上拍片的悬崖哥哥)</p>
+      <p>今年夏天在前门，我再一次与查里里相遇了。他跟我说他想拍纪录片，一个关于年轻人的纪录片。他想寻找那些对生活充满激情的年轻人，记录他们的生活
+         查里里向来是个疯子，但是他说服了我，因为我知道，这将是我人生中第一次拍摄纪录片，这对我是一个挑战。査里里认为他的初中同学平平李是一个很不错的
+         人选，而此时平平李正在筹备一个有关当代市井文化的展览。他希望我和査里里为他拍摄一个有关少女偶像与城市废墟相结合的意识流短片，里面要有鬼魂...&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#A0522D; background-color: transparent;" href="">>>>我的故事</a></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="sidenav">
+      <a href="">发起创作</a>
+    </div>
+    <div class="sidenav">
+      <a href="">加入创作</a>
+    </div>
+
+
+    <div class="card1">
+      <h2>闹海榜</h2>
+      <div style="background-color: black; margin-top: 10px; padding: 20px 22px; text-align: center;"><a href="">不安分子</a></div>
+      <div style="background-color: black; margin-top: 10px; padding: 20px 22px; text-align: center;"><a href="">市井野史</a></div>
+      <div style="background-color: black; margin-top: 10px; padding: 20px 22px; text-align: center;"><a href="">悲情人物</a></div>
+      <br>
+      <div  style="text-align: center;"><a href="" style="color: red; text-decoration: underline;">更多</a></div>
+    </div>
+
+
+
+    <div class="card2">
+      <h3 >哪吒从何而来</h3>
+      <div><a href="">"献给所有哪吒"</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><a href="" style="color: black;">三头六臂，莲花盛开</a></h2>
+</div>
+
+</body>
+</html>
